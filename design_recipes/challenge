@@ -1,0 +1,42 @@
+## 1.
+
+As a user
+So that I can keep track of my music listening
+I want to add tracks I've listened to and see a list of them.
+
+
+## 2.
+
+class MusicTracker
+    def initialize
+        list_of_music_tracks = [] # initializing a list to be used for the tracks
+    end
+
+    def add(music_track) # music_track is a string representing the track's title
+        list_of_music_tracks << music_track # music_track is assigned to the list
+    end
+
+    def show(list_of_music_tracks) # the music list
+        return list_of_music_tracks # the list will be returned to the user to see
+    end
+
+
+## 3.
+
+```ruby
+# 1
+musicTracker = MusicTracker.new
+musicTracker.list_of_music_tracks # => []
+
+# 2
+musicTracker = MusicTracker.new
+musicTracker.add("Hell Bells")
+musicTracker.add("Chase The Ace")
+musicTracker.add("Thunderstruck")
+musicTracker.list_of_music_tracks # => ["Hell Bells"]
+musicTracker.list_of_music_tracks # => "Hell Bells", "Chase The Ace", "Thunderstruck"
+```
+
+## 4.
+
+Coding..
