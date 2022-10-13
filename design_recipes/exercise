@@ -1,0 +1,65 @@
+## 1. 
+
+As a user
+So that I can keep track of my tasks
+I want a program that I can add todo tasks to and see a list of them.
+
+
+## 2.
+
+#
+class TaskTracker
+    def initialize() # initializer of the task list
+        # @list_of_tasks = list_of_tasks
+    end
+
+    def add(task) # adds a task to the list ------ # task is a string var
+        # no return value 
+    end
+
+    def list_of_todos # prints out the list of tasks ------ # var: list_of_tasks
+        # print list_of_tasks
+    end
+    
+    def completed_tasks(task)
+        # no return value
+        # fails if task does not exist
+    end
+        
+
+## 3.
+
+```ruby
+# 1
+taskTracker = TaskTracker.new
+taskTracker.list_of_todos # => []
+
+# 2
+taskTracker = TaskTracker.new
+taskTracker.add("shopping")
+taskTracker.list_of_todos # => ["shopping]
+taskTracker.add("cleaning")
+taskTracker.list_of_todos # => "shopping", "cleaning"
+
+# 3
+taskTracker = TaskTracker.new
+taskTracker.add("shopping")
+taskTracker.list_of_todos # => ["shopping]
+taskTracker.add("cleaning")
+taskTracker.list_of_todos # => "shopping", "cleaning"
+taskTracker.complete("shopping")
+taskTracker.list_of_todos # => "cleaning"
+
+# 4
+taskTracker = TaskTracker.new
+taskTracker.add("shopping")
+taskTracker.list_of_todos # => ["shopping]
+taskTracker.add("cleaning")
+taskTracker.list_of_todos # => "shopping", "cleaning"
+taskTracker.complete("dusting")
+taskTracker.list_of_todos # fails
+```
+
+##4.
+
+Coding..
