@@ -10,7 +10,7 @@ I want a program that I can add todo tasks to and see a list of them.
 #
 class TaskTracker
     def initialize() # initializer of the task list
-        # @list_of_tasks = list_of_tasks
+        # @list_of_tasks = []
     end
 
     def add(task) # adds a task to the list ------ # task is a string var
